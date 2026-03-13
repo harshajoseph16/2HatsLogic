@@ -52,15 +52,10 @@ html {
     width: 18px;
     cursor: pointer;
 }
-
 .search-input {
     width: 0;
     opacity: 0;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    margin-left: 10px;
-    transition: 0.4s;
+    transition: width 0.4s ease, opacity 0.4s ease;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -125,11 +120,14 @@ html {
     background: #0000005C;
     color: #fff;
     padding: 40px;
-        max-width: 510px;
+        max-width: 540px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
-
+.banner-box h2 {
+    font-weight: bold;
+}
 .button {
      background: #ffffff;
     color: #000;
@@ -182,6 +180,9 @@ html {
     align-items: center;
     margin-bottom: 30px;
 }
+.heading h1 {
+    font-weight:bold;
+}
 
 .heading p {
     width: 50%;
@@ -189,7 +190,16 @@ html {
     align-items: center;
     margin: 0 auto;
     justify-content: center;
+    color: #616161;
 
+}
+
+.head-line {
+  width: 120px;      
+  height: 3px;       
+  background-color: #000; 
+  border: none;     
+  margin: 20px auto; 
 }
 
 .product {
@@ -246,6 +256,7 @@ html {
 .project {
     text-align: center;
     overflow: hidden;
+    margin-top: 30px;
 }
 
 .project img {
@@ -255,9 +266,8 @@ html {
     cursor: pointer;
 }
 
-/* Correct hover syntax */
 .project img:hover {
-    transform: scale(1.05); /* gentle zoom */
+    transform: scale(1.05); 
 }
 .footer{
 background:#000;
@@ -329,7 +339,7 @@ cursor:pointer;
     color:white;      
   }
 
-/* MOBILE */
+/* responsive */
 
 @media(max-width:768px){
 
@@ -340,6 +350,7 @@ justify-content:center;
 
 .banner-box{
 text-align:center;
+padding: 20px;
 }
 
 .project {
