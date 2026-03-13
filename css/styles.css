@@ -3,22 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
-    font-family: "Rajdhani", sans-serif !important;
+    font-family: 'Figtree', sans-serif;
+
 }
+
 
 a {
     color: black;
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 0 !important;
-}
 
+.logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+      margin-bottom: 10px;  
+}
 .main-header {
-    padding: 25px 0;
+    padding: 20px 0;
+}
+.nav-link.active {
+    color: #979797 !important;
 }
 
+.nav-link:hover {
+    color: #988f8f !important;
+}
 .menubar {
     width: 100%;
 }
@@ -30,15 +40,16 @@ p {
 .bg-light {
     background-color: white !important;
 }
+.search-box {
 
-.serach {
-    width: auto;
 }
+
 
 .search {
     position: relative;
     display: flex;
     align-items: center;
+    width: auto;
 }
 
 .search-icon {
@@ -56,6 +67,15 @@ p {
     transition: 0.4s;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+            font-weight: bold;
+        font-size: 13px;
+        color: black;
+        text-transform: uppercase;
+}
+.navbar-nav  li {
+    padding: 0 10px;
+}
 .menu-icons {
     display: flex;
     align-items: center;
@@ -70,6 +90,7 @@ p {
 .menu_icon img {
     width: 20px;
     cursor: pointer;
+    
 }
 
 .menu_icon img:hover {
@@ -109,21 +130,28 @@ p {
     background: #0000005C;
     color: #fff;
     padding: 40px;
-    max-width: 500px;
+        max-width: 510px;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
-    background: #ffffff !important;
-    color: #000 !important;
-    padding: 12px 28px;
-    border: 0 !important;
-    border-radius: 0;
-    font-weight: 500;
+     background: #ffffff;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;           
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 12px;
+    display: inline-flex;         
+    align-items: center;          
+    justify-content: center;
+    gap: 8px;                     
+    cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: none !important;
-    outline: none;
+    width: 150px;
 }
 
 .button:hover {
@@ -210,23 +238,31 @@ p {
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 10px
 }
 
 .product-overlay a {
 
     color: #B4B4B4;
 }
-
+.product-overlay p {
+    margin-bottom: 0 !important;
+}
 .project {
     text-align: center;
 }
 
 .project img {
-
     margin-bottom: 20px;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); /* smooth */
+    transform-origin: center center;
+    cursor: pointer;
 }
 
+/* Correct hover syntax */
+.project img:hover {
+    transform: scale(1.05); /* gentle zoom */
+}
 .footer{
 background:#000;
 color:#fff;
@@ -264,7 +300,9 @@ cursor:pointer;
     transform: scale(1.1);  
   }
 
-
+.f-logo img {
+    width: auto;
+}
 
  .f-menu h6 {
     margin-bottom: 10px;
@@ -297,7 +335,7 @@ cursor:pointer;
 @media(max-width:768px){
 
 .banner-bg{
-height:350px;
+height:auto;
 justify-content:center;
 }
 
@@ -320,4 +358,45 @@ text-align:center;
 }
 .f-menu {
   margin-top: 40px;   
+}
+.logo {
+    
+    border-bottom: 1px solid #cccc;
+    padding-bottom: 15px;
+      
+}
+
+
+.logo img {
+    width: 25%;
+            margin: 0 auto;
+}
+.product {
+    
+    margin-bottom: 50px;
+}
+.section-space {
+    padding: 25px 0;
+}
+
+.f-logo img {
+    width: 30%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    padding: 15px 0;
+}
+
+.rigt-icon {
+       margin: 30px 15px 0; 
+}
+.button {
+    width: auto;
+    min-width: 200px;
+}
 }
