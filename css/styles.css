@@ -407,4 +407,9 @@ padding: 20px;
 .button {
     width: 100%;
 }
+
+.product-card.small {
+  
+    margin-bottom: 50px;
+}
 }
