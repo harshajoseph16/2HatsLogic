@@ -4,20 +4,20 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial;
-background-color: white;
     font-family: "Rajdhani", sans-serif !important;
 }
 a {
     color: black;
 }
 .main-header{
-padding:20px;
+padding:10px 0;
 }
 .menubar {
     width: 100%;
-    padding: 10px 0;
 }
-
+.navbar-nav ul li {
+    padding: 0 20px !important; 
+}
 .bg-light {
     background-color: white !important;
 }
@@ -67,4 +67,54 @@ opacity:0.7;
 .banner {
     width: 100%;
     background-image: url();
+}
+
+
+.section-space{
+padding:80px 0;
+}
+
+/* banner */
+
+.banner-bg{
+background:url('../images/banner.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+padding:60px 0;
+min-height:350px;
+background-position: center ;
+
+}
+
+.banner-content{
+display:flex;
+justify-content:flex-end; 
+width:100%;
+}
+
+.banner-box{
+background: #0000005C;
+color:#fff;
+padding:40px;
+max-width:500px;
+}
+
+.button{
+background:#ffffff !important;
+color:#000 !important;
+padding:12px 28px;
+border:0 !important;
+border-radius:0;
+font-weight:500;
+text-transform:uppercase;
+letter-spacing:1px;
+transition:all 0.3s ease;
+box-shadow:none !important;
+outline:none;
+}
+
+.button:hover{
+background:#000 !important;
+color:#fff !important;
+border:0;
 }
