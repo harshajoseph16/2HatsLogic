@@ -29,10 +29,11 @@
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container">
 
-                        <div class="search">
-                            <img src="images/Vector.png" class="search-icon">
-                            <input type="text" class="search-input" placeholder="Search...">
-                        </div>
+                      <div class="search" id="searchBox">
+    <img src="images/Vector.png" class="search-icon" id="searchIcon">
+    <input type="text" class="search-input" placeholder="Search...">
+</div>
+
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarContent">
@@ -308,11 +309,22 @@ Saudi Arabia </address></p>
 </div>
 
 </footer>
+<script>document.addEventListener("DOMContentLoaded", function(){
+
+    const searchIcon = document.getElementById("searchIcon");
+    const searchBox = document.getElementById("searchBox");
+
+    searchIcon.addEventListener("click", function(){
+        searchBox.classList.toggle("active");
+    });
+
+});</script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
